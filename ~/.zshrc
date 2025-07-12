@@ -51,7 +51,6 @@ sandbox() {
             ;;
     esac
     
-    # Return to original directory if command failed
     local exit_code=$?
     if [[ $exit_code -ne 0 ]]; then
         cd "$current_dir"
